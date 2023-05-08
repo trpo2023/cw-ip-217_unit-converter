@@ -1,0 +1,7 @@
+*.[oad]
+*~
+*.out
+*.swp
+*.swo
+*.exe
+.vscode
