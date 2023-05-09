@@ -1,6 +1,10 @@
 #ifndef _converter_H_
 #define _converter_H_
 
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 /*----------------------LengthFuncs----------------------------*/
 void mm_to_sm(float mm, float rez)
 {
@@ -148,7 +152,55 @@ void fr_to_kl(float fr, float rez)
     printf("%f градусов Фаренгейта в Кельвинах: %f\n", fr, rez);
 }
 /*-----------------------TempFuncs-----------------------------*/
+/*----------------------WeightFuncs----------------------------*/
+void gr_to_kg(float gr, float rez)
+{
+    printf("Введите кол-во грамм: ");
+    scanf("%f", &gr);
+    rez = gr / 1000;
+    printf("%.3f граммов в килограммах: %.3f\n", gr, rez);
+}
 
+void gr_to_tn(float gr, float rez)
+{
+    printf("Введите кол-во грамм: ");
+    scanf("%f", &gr);
+    rez = gr / 1000000;
+    printf("%.3f граммов в тоннах: %.3f\n", gr, rez);
+}
+
+void kg_to_gr(float kg, float rez)
+{
+    printf("Введите кол-во килограммов: ");
+    scanf("%f", &kg);
+    rez = kg * 1000;
+    printf("%.3f килограммов в граммах: %.3f\n", kg, rez);
+}
+
+void kg_to_tn(float kg, float rez)
+{
+    printf("Введите кол-во килограммов: ");
+    scanf("%f", &kg);
+    rez = kg / 1000;
+    printf("%.3f килограммов в тоннах: %.3f\n", kg, rez);
+}
+
+void tn_to_gr(float tn, float rez)
+{
+    printf("Введите кол-во тонн: ");
+    scanf("%f", &tn);
+    rez = tn * 1000000;
+    printf("%.3f тонн в граммах: %.3f\n", tn, rez);
+}
+
+void tn_to_kg(float tn, float rez)
+{
+    printf("Введите кол-во тонн: ");
+    scanf("%f", &tn);
+    rez = tn * 1000;
+    printf("%.3f тонн в килограммах: %.3f\n", tn, rez);
+}
+/*----------------------WeightFuncs----------------------------*/
 /*-----------------------TimeFuncs-----------------------------*/
 void sec_to_min(float sec, float rez)
 {
