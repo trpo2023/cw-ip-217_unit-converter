@@ -5,3 +5,4 @@
 *.swo
 *.exe
 .vscode
+temp*
