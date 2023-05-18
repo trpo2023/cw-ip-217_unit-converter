@@ -1,9 +1,4 @@
-#ifndef _converter_H_
-#define _converter_H_
-
-#include <stdbool.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include <libconverter/converter.h>
 
 /*----------------------LengthFuncs----------------------------*/
 void mm_to_sm(float mm, float rez)
@@ -250,4 +245,3 @@ void hour_to_min(float hour, float rez)
     printf("%f часов в секундах: %f\n", hour, rez);
 }
 /*-----------------------TimeFuncs-----------------------------*/
-#endif

@@ -1,9 +1,9 @@
-#include "converter.h"
+#include <libconverter/converter.h>
 
 int main()
 {
     bool hah = true;
-    float rez, mm, sm, m, km, cl, kl, fr, gr, kg, tn, sec, min, hour;
+    float rez = 0, mm = 0, sm = 0, m = 0, km = 0, cl = 0, kl = 0, fr = 0, gr = 0, kg = 0, tn = 0, sec = 0, min = 0, hour = 0;
     int var = 0;
     while (hah)
     {
