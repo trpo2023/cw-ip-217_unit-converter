@@ -1,4 +1,4 @@
-#include <libconverter/converter.h>
+#include "../libconverter/converter.h"
 
 int main()
 {
@@ -34,17 +34,29 @@ int main()
 
                 if (x1 == 1)
                 {
+                    printf("Введите кол-во миллиметров: ");
+                    scanf("%f", &mm);
+                    printf("%.3f миллиметров в санитметрах: ", mm);
                     mm_to_sm(mm, rez);
+                    printf("%f\n", rez);
                 }
 
                 if (x1 == 2)
                 {
-                    mm_to_m(mm, rez);
+                    printf("Введите кол-во миллиметров: ");
+                    scanf("%f", &mm);
+                    printf("%.3f миллиметров в метрах: ", mm);
+                    mm_to_m(mm);
+                    printf("%f\n", mm);
                 }
 
                 if (x1 == 3)
                 {
-                    mm_to_km(mm, rez);
+                    printf("Введите кол-во миллиметров: ");
+                    scanf("%f", &mm);
+                    printf("%.3f миллиметров в километрах: ", mm);
+                    mm_to_km(mm);
+                    printf("%f\n", mm);
                 }
             }
 
@@ -57,17 +69,29 @@ int main()
 
                 if (x1 == 1)
                 {
-                    sm_to_mm(sm, rez);
+                    printf("Введите кол-во сантиметров: ");
+                    scanf("%f", &sm);
+                    printf("%.3f сантиметров в миллиметрах: ", sm);
+                    sm_to_mm(sm);
+                    printf("%f\n", sm);
                 }
 
                 if (x1 == 2)
                 {
-                    sm_to_m(sm, rez);
+                    printf("Введите кол-во сантиметров: ");
+                    scanf("%f", &sm);
+                    printf("%.3f сантиметров в метрах: ", sm);
+                    sm_to_m(sm);
+                    printf("%f\n", sm);
                 }
 
                 if (x1 == 3)
                 {
-                    sm_to_km(sm, rez);
+                    printf("Введите кол-во сантиметров: ");
+                    scanf("%f", &sm);
+                    printf("%.3f сантиметров в километрах: ", sm);
+                    sm_to_km(sm);
+                    printf("%f\n", sm);
                 }
             }
 
@@ -81,17 +105,29 @@ int main()
 
                 if (x1 == 1)
                 {
-                    m_to_mm(m, rez);
+                    printf("Введите кол-во метров: ");
+                    scanf("%f", &m);
+                    printf("%.3f метров в миллиметрах: ", m);
+                    m_to_mm(m);
+                    printf("%f\n", m);
                 }
 
                 if (x1 == 2)
                 {
-                    m_to_sm(m, rez);
+                    printf("Введите кол-во метров: ");
+                    scanf("%f", &m);
+                    printf("%.3f метров в сантиметрах: ", m);
+                    m_to_sm(m);
+                    printf("%f\n", m);
                 }
 
                 if (x1 == 3)
                 {
-                    m_to_km(m, rez);
+                    printf("Введите кол-во метров: ");
+                    scanf("%f", &m);
+                    printf("%.3f метров в километрах: ", m);
+                    m_to_km(m);
+                    printf("%f\n", m);
                 }
             }
 
@@ -104,17 +140,29 @@ int main()
 
                 if (x1 == 1)
                 {
-                    km_to_mm(km, rez);
+                    printf("Введите кол-во километров: ");
+                    scanf("%f", &km);
+                    printf("%.3f километров в миллиметрах: ", km);
+                    km_to_mm(km);
+                    printf("%f\n", km);
                 }
 
                 if (x1 == 2)
                 {
-                    km_to_sm(km, rez);
+                    printf("Введите кол-во километров: ");
+                    scanf("%f", &km);
+                    printf("%.3f километров в сантиметрах: ", km);
+                    km_to_sm(km);
+                    printf("%f\n", km);
                 }
 
                 if (x1 == 3)
                 {
-                    km_to_m(km, rez);
+                    printf("Введите кол-во километров: ");
+                    scanf("%f", &km);
+                    printf("%.3f километров в метрах: ", km);
+                    km_to_m(km);
+                    printf("%f\n", km);
                 }
             }
 
@@ -137,12 +185,20 @@ int main()
 
                 if (x1 == 1)
                 {
-                    cl_to_kl(cl, rez);
+                    printf("Введите температуру в градусах Цельсия: ");
+                    scanf("%f", &cl);
+                    printf("%f градусов Цельсия в Кельвинах: ", cl);
+                    cl_to_kl(cl);
+                    printf("%f\n", cl);
                 }
 
                 if (x1 == 2)
                 {
-                    cl_to_fr(cl, rez);
+                    printf("Введите температуру в градусах Цельсия: ");
+                    scanf("%f", &cl);
+                    printf("%f градусов Цельсия в градусах Фаренгейта: ", cl);
+                    cl_to_fr(cl);
+                    printf("%f\n", cl);
                 }
             }
 
@@ -155,12 +211,20 @@ int main()
 
                 if (x1 == 1)
                 {
-                    kl_to_cl(kl, rez);
+                    printf("Введите количество Кельвинов: ");
+                    scanf("%f", &kl);
+                    printf("%f Кельвинов в градусах Цельсия: ", kl);
+                    kl_to_cl(kl);
+                    printf("%f\n", kl);
                 }
 
                 if (x1 == 2)
                 {
-                    kl_to_fr(kl, rez);
+                    printf("Введите количество Кельвинов: ");
+                    scanf("%f", &kl);
+                    printf("%f Кельвинов в градусах Фаренгейта: ", kl);
+                    kl_to_fr(kl);
+                    printf("%f\n", kl);
                 }
             }
 
@@ -173,12 +237,20 @@ int main()
 
                 if (x1 == 1)
                 {
-                    fr_to_cl(fr, rez);
+                    printf("Введите температуру в градусах Фаренгейта: ");
+                    scanf("%f", &fr);
+                    printf("%f градусов Фаренгейта в градусах Цельсия: ", fr);
+                    fr_to_cl(fr);
+                    printf("%f\n", fr);
                 }
 
                 if (x1 == 2)
                 {
-                    fr_to_kl(fr, rez);
+                    printf("Введите температуру в градусах Фаренгейта: ");
+                    scanf("%f", &fr);
+                    printf("%f градусов Фаренгейта в Кельвинах: ", fr);
+                    fr_to_kl(fr);
+                    printf("%f\n", fr);
                 }
             }
             break;
@@ -199,12 +271,20 @@ int main()
 
                 if (x1 == 1)
                 {
-                    gr_to_kg(gr, rez);
+                    printf("Введите кол-во грамм: ");
+                    scanf("%f", &gr);
+                    printf("%.3f граммов в килограммах: ", gr);
+                    gr_to_kg(gr);
+                    printf("%f\n", gr);
                 }
 
                 if (x1 == 2)
                 {
-                    gr_to_tn(gr, rez);
+                    printf("Введите кол-во грамм: ");
+                    scanf("%f", &gr);
+                    printf("%.3f граммов в тоннах: ", gr);
+                    gr_to_tn(gr);
+                    printf("%f\n", gr);
                 }
             }
 
@@ -217,12 +297,20 @@ int main()
 
                 if (x1 == 1)
                 {
-                    kg_to_gr(kg, rez);
+                    printf("Введите кол-во килограмм: ");
+                    scanf("%f", &kg);
+                    printf("%.3f килограммов в граммах: ", kg);
+                    kg_to_gr(kg);
+                    printf("%f\n", kg);
                 }
 
                 if (x1 == 2)
                 {
-                    kg_to_tn(kg, rez);
+                    printf("Введите кол-во килограмм: ");
+                    scanf("%f", &kg);
+                    printf("%.3f килограммов в тоннах: ", kg);
+                    kg_to_tn(kg);
+                    printf("%f\n", kg);
                 }
             }
 
@@ -235,12 +323,20 @@ int main()
 
                 if (x1 == 1)
                 {
-                    tn_to_gr(tn, rez);
+                    printf("Введите кол-во тонн: ");
+                    scanf("%f", &tn);
+                    printf("%.3f тонн в граммах: ", tn);
+                    tn_to_gr(tn);
+                    printf("%f\n", tn);
                 }
 
                 if (x1 == 2)
                 {
-                    tn_to_kg(tn, rez);
+                    printf("Введите кол-во тонн: ");
+                    scanf("%f", &tn);
+                    printf("%.3f тонн в килограммах: ", tn);
+                    tn_to_kg(tn);
+                    printf("%f\n", tn);
                 }
             }
             break;
@@ -260,11 +356,19 @@ int main()
 
                 if (x1 == 1)
                 {
-                    sec_to_min(sec, rez);
+                    printf("Введите кол-во секунд: ");
+                    scanf("%f", &sec);
+                    printf("%f секунды в минуты: ", sec);
+                    sec_to_min(sec);
+                    printf("%f\n", sec);
                 }
                 if (x1 == 2)
                 {
-                    sec_to_hour(sec, rez);
+                    printf("Введите кол-во секунд: ");
+                    scanf("%f", &sec);
+                    printf("%f секунды в часы: ", sec);
+                    sec_to_hour(sec);
+                    printf("%f\n", sec);
                 }
             }
 
@@ -277,11 +381,19 @@ int main()
 
                 if (x1 == 1)
                 {
-                    min_to_sec(min, rez);
+                    printf("Введите кол-во минут: ");
+                    scanf("%f", &min);
+                    printf("%f минуты в секунды: ", min);
+                    min_to_sec(min);
+                    printf("%f\n", min);
                 }
                 if (x1 == 2)
                 {
-                    min_to_hour(min, rez);
+                    printf("Введите кол-во минут: ");
+                    scanf("%f", &min);
+                    printf("%f минуты в часы: ", min);
+                    min_to_hour(min);
+                    printf("%f\n", min);
                 }
             }
 
@@ -294,11 +406,19 @@ int main()
 
                 if (x1 == 1)
                 {
-                    hour_to_sec(hour, rez);
+                    printf("Введите кол-во часов: ");
+                    scanf("%f", &hour);
+                    printf("%f часы в секунды: ", hour);
+                    hour_to_sec(hour);
+                    printf("%f\n", hour);
                 }
                 if (x1 == 2)
                 {
-                    hour_to_min(hour, rez);
+                    printf("Введите кол-во часов: ");
+                    scanf("%f", &hour);
+                    printf("%f часы в минуты: ", hour);
+                    hour_to_min(hour);
+                    printf("%f\n", hour);
                 }
             }
             break;
