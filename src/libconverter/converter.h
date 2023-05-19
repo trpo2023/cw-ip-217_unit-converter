@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 /*----------------------LengthFuncs----------------------------*/
-float mm_to_sm(float mm, rez);
+float mm_to_sm(float mm);
 float mm_to_m(float mm);
 float mm_to_km(float mm);
 float sm_to_mm(float sm);
