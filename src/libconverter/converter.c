@@ -1,247 +1,160 @@
-#include <libconverter/converter.h>
+#include "../libconverter/converter.h"
 
 /*----------------------LengthFuncs----------------------------*/
-void mm_to_sm(float mm, float rez)
+float mm_to_sm(float mm, float rez)
 {
-    printf("Введите кол-во миллиметров: ");
-    scanf("%f", &mm);
     rez = mm / 10;
-    printf("%.3f миллиметров в санитметрах: %.3f\n", mm, rez);
+    return rez;
 }
 
-void mm_to_m(float mm, float rez)
+float mm_to_m(float mm)
 {
-    printf("Введите кол-во миллиметров: ");
-    scanf("%f", &mm);
-    rez = mm / 1000;
-    printf("%.3f миллиметров в метрах: %.3f\n", mm, rez);
+    return mm / 1000;
 }
 
-void mm_to_km(float mm, float rez)
+float mm_to_km(float mm)
 {
-    printf("Введите кол-во миллиметров: ");
-    scanf("%f", &mm);
-    rez = mm / 1000000;
-    printf("%.0f миллиметров в километрах: %.6f\n", mm, rez);
+    return mm / 1000000;
 }
 
-void sm_to_mm(float sm, float rez)
+float sm_to_mm(float sm)
 {
-    printf("Введите кол-во сантиметров: ");
-    scanf("%f", &sm);
-    rez = sm * 10;
-    printf("%.3f сантиметров в миллиметрах: %.3f\n", sm, rez);
+    return sm * 10;
 }
 
-void sm_to_m(float sm, float rez)
+float sm_to_m(float sm)
 {
-    printf("Введите кол-во сантиметров: ");
-    scanf("%f", &sm);
-    rez = sm / 100;
-    printf("%.3f сантиметров в метрах: %.2f\n", sm, rez);
+    return sm / 100;
 }
 
-void sm_to_km(float sm, float rez)
+float sm_to_km(float sm)
 {
-    printf("Введите кол-во сантиметров: ");
-    scanf("%f", &sm);
-    rez = sm / 100000;
-    printf("%.3f сантиметров в километрах: %.5f\n", sm, rez);
+    return sm / 100000;
 }
 
-void m_to_mm(float m, float rez)
+float m_to_mm(float m)
 {
-    printf("Введите кол-во метров: ");
-    scanf("%f", &m);
-    rez = m * 1000;
-    printf("%.3f метров в миллиметрах: %.5f\n", m, rez);
+    return m * 1000;
 }
 
-void m_to_sm(float m, float rez)
+float m_to_sm(float m)
 {
-    printf("Введите кол-во метров: ");
-    scanf("%f", &m);
-    rez = m * 100;
-    printf("%.3f метров в сантиметрах: %.5f\n", m, rez);
+    return m * 100;
 }
 
-void m_to_km(float m, float rez)
+float m_to_km(float m)
 {
-    printf("Введите кол-во метров: ");
-    scanf("%f", &m);
-    rez = m / 1000;
-    printf("%.3f метров в километрах: %.3f\n", m, rez);
+    return m / 1000;
 }
 
-void km_to_mm(float km, float rez)
+float km_to_mm(float km)
 {
-    printf("Введите кол-во километров: ");
-    scanf("%f", &km);
-    rez = km * 1000000;
-    printf("%.3f километров в миллиметрах: %.3f\n", km, rez);
+    return km * 1000000;
 }
 
-void km_to_sm(float km, float rez)
+float km_to_sm(float km)
 {
-    printf("Введите кол-во километров: ");
-    scanf("%f", &km);
-    rez = km * 100000;
-    printf("%.3f километров в сантиметрах: %.3f\n", km, rez);
+    return km * 100000;
 }
 
-void km_to_m(float km, float rez)
+float km_to_m(float km)
 {
-    printf("Введите кол-во километров: ");
-    scanf("%f", &km);
-    rez = km * 1000;
-    printf("%.3f километров в метрах: %.3f\n", km, rez);
+    return km * 1000;
 }
 /*----------------------LengthFuncs----------------------------*/
 
 /*-----------------------TempFuncs-----------------------------*/
-void cl_to_kl(float cl, float rez)
+float cl_to_kl(float cl)
 {
-    printf("Введите температуру в градусах Цельсия: ");
-    scanf("%f", &cl);
-    rez = cl + 273.15;
-    printf("%f градусов Цельсия в Кельвинах: %f\n", cl, rez);
+    return cl + 273.15;
 }
 
-void cl_to_fr(float cl, float rez)
+float cl_to_fr(float cl)
 {
-    printf("Введите температуру в градусах Цельсия: ");
-    scanf("%f", &cl);
-    rez = (cl + 9 / 5) + 32;
-    printf("%f градусов Цельсия в градусах Фаренгейта: %f\n", cl, rez);
+    return (cl + 9 / 5) + 32;
 }
 
-void kl_to_cl(float kl, float rez)
+float kl_to_cl(float kl)
 {
-    printf("Введите количество Кельвинов: ");
-    scanf("%f", &kl);
-    rez = kl - 273.15;
-    printf("%f Кельвинов в градусах Цельсия: %f\n", kl, rez);
+    return kl - 273.15;
 }
 
-void kl_to_fr(float kl, float rez)
+float kl_to_fr(float kl)
 {
-    printf("Введите количество Кельвинов: ");
-    scanf("%f", &kl);
-    rez = (kl - 273.15) * 9 / 5 + 32;
-    printf("%f Кельвинов в градусах Фаренгейта: %f\n", kl, rez);
+    return (kl - 273.15) * 9 / 5 + 32;
 }
 
-void fr_to_cl(float fr, float rez)
+float fr_to_cl(float fr)
 {
-    printf("Введите температуру в градусах Фаренгейта: ");
-    scanf("%f", &fr);
-    rez = (fr - 32) * 5 / 9;
-    printf("%f градусов Фаренгейта в градусах Цельсия: %f\n", fr, rez);
+    return (fr - 32) * 5 / 9;
 }
 
-void fr_to_kl(float fr, float rez)
+float fr_to_kl(float fr)
 {
-    printf("Введите температуру в градусах Фаренгейта: ");
-    scanf("%f", &fr);
-    rez = (fr - 32) * 5 / 9 + 273.15;
-    printf("%f градусов Фаренгейта в Кельвинах: %f\n", fr, rez);
+    return (fr - 32) * 5 / 9 + 273.15;
 }
 /*-----------------------TempFuncs-----------------------------*/
+
 /*----------------------WeightFuncs----------------------------*/
-void gr_to_kg(float gr, float rez)
+float gr_to_kg(float gr)
 {
-    printf("Введите кол-во грамм: ");
-    scanf("%f", &gr);
-    rez = gr / 1000;
-    printf("%.3f граммов в килограммах: %.3f\n", gr, rez);
+    return gr / 1000;
 }
 
-void gr_to_tn(float gr, float rez)
+float gr_to_tn(float gr)
 {
-    printf("Введите кол-во грамм: ");
-    scanf("%f", &gr);
-    rez = gr / 1000000;
-    printf("%.3f граммов в тоннах: %.3f\n", gr, rez);
+    return gr / 1000000;
 }
 
-void kg_to_gr(float kg, float rez)
+float kg_to_gr(float kg)
 {
-    printf("Введите кол-во килограммов: ");
-    scanf("%f", &kg);
-    rez = kg * 1000;
-    printf("%.3f килограммов в граммах: %.3f\n", kg, rez);
+    return kg * 1000;
 }
 
-void kg_to_tn(float kg, float rez)
+float kg_to_tn(float kg)
 {
-    printf("Введите кол-во килограммов: ");
-    scanf("%f", &kg);
-    rez = kg / 1000;
-    printf("%.3f килограммов в тоннах: %.3f\n", kg, rez);
+    return kg / 1000;
 }
 
-void tn_to_gr(float tn, float rez)
+float tn_to_gr(float tn)
 {
-    printf("Введите кол-во тонн: ");
-    scanf("%f", &tn);
-    rez = tn * 1000000;
-    printf("%.3f тонн в граммах: %.3f\n", tn, rez);
+    return tn * 1000000;
 }
 
-void tn_to_kg(float tn, float rez)
+float tn_to_kg(float tn)
 {
-    printf("Введите кол-во тонн: ");
-    scanf("%f", &tn);
-    rez = tn * 1000;
-    printf("%.3f тонн в килограммах: %.3f\n", tn, rez);
+    return tn * 1000;
 }
 /*----------------------WeightFuncs----------------------------*/
+
 /*-----------------------TimeFuncs-----------------------------*/
-void sec_to_min(float sec, float rez)
+float sec_to_min(float sec)
 {
-    printf("Введите кол-во секунд: ");
-    scanf("%f", &sec);
-    rez = sec / 60;
-    printf("%f секунды в минуты: %f\n", sec, rez);
+    return sec / 60;
 }
 
-void sec_to_hour(float sec, float rez)
+float sec_to_hour(float sec)
 {
-    printf("Введите кол-во секунд: ");
-    scanf("%f", &sec);
-    rez = sec / 3600;
-    printf("%f секунды в часы: %f\n", sec, rez);
+    return sec / 3600;
 }
 
-void min_to_sec(float min, float rez)
+float min_to_sec(float min)
 {
-    printf("Введите кол-во минут: ");
-    scanf("%f", &min);
-    rez = min * 60;
-    printf("%f минут в секундах: %f\n", min, rez);
+    return min * 60;
 }
 
-void min_to_hour(float min, float rez)
+float min_to_hour(float min)
 {
-    printf("Введите кол-во минут: ");
-    scanf("%f", &min);
-    rez = min / 60;
-    printf("%f минут в часах: %f\n", min, rez);
+    return min / 60;
 }
 
-void hour_to_sec(float hour, float rez)
+float hour_to_sec(float hour)
 {
-    printf("Введите кол-во часов: ");
-    scanf("%f", &hour);
-    rez = hour * 3600;
-    printf("%f часов в секундах: %f\n", hour, rez);
+    return hour * 3600;
 }
 
-void hour_to_min(float hour, float rez)
+float hour_to_min(float hour)
 {
-    printf("Введите кол-во часов: ");
-    scanf("%f", &hour);
-    rez = hour * 60;
-    printf("%f часов в секундах: %f\n", hour, rez);
+    return hour * 60;
 }
 /*-----------------------TimeFuncs-----------------------------*/
