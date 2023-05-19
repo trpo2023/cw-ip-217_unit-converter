@@ -1,10 +1,9 @@
-#include "../libconverter/converter.h"
+#include <libconverter/converter.h>
 
 /*----------------------LengthFuncs----------------------------*/
-float mm_to_sm(float mm, float rez)
+float mm_to_sm(float mm)
 {
-    rez = mm / 10;
-    return rez;
+    return mm / 10;
 }
 
 float mm_to_m(float mm)
