@@ -4,7 +4,7 @@ int main() {
   bool hah = true;
   float mm = 0, sm = 0, m = 0, km = 0, cl = 0, kl = 0, fr = 0, gr = 0, kg = 0,
         tn = 0, sec = 0, min = 0, hour = 0;
-  int  var = 0;
+  int var = 0;
   while (hah) {
     printf("Выберите один из "
            "вариантов:\n(0)Выход\n(1)Длина\n(2)Температура\n(3)Масса\n(4)"
