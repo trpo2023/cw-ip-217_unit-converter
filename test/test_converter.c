@@ -174,3 +174,41 @@ CTEST(tn_to_kg, test1)
     ASSERT_DBL_NEAR(expected, result);
 }
 /*----------------------WeightFuncs----------------------------*/
+
+/*-----------------------TimeFuncs-----------------------------*/
+CTEST(sec_to_min, test1) {
+ float result = sec_to_min(60);
+ float expected = 1;
+ ASSERT_DBL_NEAR(expected, result);
+}
+
+CTEST(sec_to_hour, test1) {
+ float result = sec_to_hour(3600);
+ float expected = 1;
+ ASSERT_DBL_NEAR(expected, result);
+}
+
+CTEST(min_to_sec, test1) {
+ float result = min_to_sec(1);
+ float expected = 60;
+ ASSERT_DBL_NEAR(expected, result);
+}
+
+CTEST(min_to_hour, test1) {
+ float result = min_to_hour(60);
+ float expected = 1;
+ ASSERT_DBL_NEAR(expected, result);
+}
+
+CTEST(hour_to_sec, test1) {
+ float result = hour_to_sec(1);
+ float expected = 3600;
+ ASSERT_DBL_NEAR(expected, result);
+}
+
+CTEST(hour_to_min, test1) {
+ float result = hour_to_min(1);
+ float expected = 60;
+ ASSERT_DBL_NEAR(expected, result);
+}
+/*-----------------------TimeFuncs-----------------------------*/
